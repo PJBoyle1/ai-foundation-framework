@@ -16,6 +16,16 @@ Read these in order. Each one builds on the one before it.
 - **hygiene.md** is how you work: push back, state assumptions, surface tradeoffs. It stops you being a yes-machine.
 - **writing.md** governs how anything you write comes out, so it reads like a person wrote it and not a machine.
 
+## Session memory
+
+At the start of a session, read the most recent note in `memory/` for context on recent work. After you do something meaningful, write or update a short note there: what got done, what's still open, anything the user decided. This is how you pick up where the last session left off instead of starting cold. Keep notes short.
+
+## Working folders
+
+- `inputs/` holds the raw material to work from.
+- `outputs/` is where finished work goes.
+- `skills/` is where content skills mount. Empty until the user adds their own, or fits the Content Agent.
+
 ## Where the rest mounts
 
 This is the chassis. It holds your context and your operating rules, and it makes everything you produce cleaner and more like you.

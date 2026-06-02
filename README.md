@@ -23,6 +23,8 @@ Think of it as the chassis of a car. It holds everything together and gives you 
 - **`setup.md`** is a five-minute Q&A that fills in your business file for you.
 - **`ARCHITECTURE.md`** explains how it all fits, and where the engine bolts on when you want more.
 
+It also comes with a few working folders, empty to start: **`memory/`** (session notes so the AI doesn't forget what you did last time), **`inputs/`** and **`outputs/`** (raw material in, finished work out), and **`skills/`** (the mount where content skills bolt on). You fill them as you go.
+
 ## Install (about 15 minutes)
 
 If you can edit a Google Doc, you can do this. No code, no terminal required.

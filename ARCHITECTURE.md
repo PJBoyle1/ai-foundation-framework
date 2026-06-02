@@ -14,7 +14,13 @@ CLAUDE.md              the root. thin. loads the rest in order.
     business.md        who you serve, what you sell, how you sound
     hygiene.md         how the AI works: push back, assume out loud, show tradeoffs
     writing.md         how anything it writes comes out
+  memory/              session notes, so it picks up where you left off
+  inputs/              raw material to work from
+  outputs/             where finished work lands
+  skills/              empty mount: content skills bolt on here
 ```
+
+The `foundation/` files are filled and loaded every session. `memory/` fills itself as you work. `inputs/`, `outputs/`, and `skills/` are the mounts: empty by default, there for you to fill or for the engine to bolt onto.
 
 `CLAUDE.md` does almost nothing itself. It points. It pulls in the focused files in a deliberate order, so the model gets a clean, sequenced brief instead of a wall of text. Each file does one job and does it in isolation, which is exactly why the model actually follows it.
 
