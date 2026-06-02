@@ -30,6 +30,6 @@ At the start of a session, read the most recent note in `memory/` for context on
 
 This is the chassis. It holds your context and your operating rules, and it makes everything you produce cleaner and more like you.
 
-It does not include the production engine: the per-format content skills, the one-thought-into-a-week-of-posts multiplier, the deep voice work, or the quality-control pass. Those bolt onto this foundation. See `ARCHITECTURE.md` for where they go and how the handoffs work.
+It does not include the production engine: the per-format content skills, the one-thought-into-a-week-of-posts multiplier, the deep voice work, or the quality-control pass. Those bolt onto this foundation. See `ARCHITECTURE.md` for where they go.
 
 If you are reading this and you have not run the setup yet, open `setup.md` and run it first.

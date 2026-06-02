@@ -4,7 +4,7 @@ Most people trying to get better AI output do the same thing: they keep adding r
 
 The problem isn't the rules. It's that one overloaded file gets skimmed. The model reads it the way you read a long blog post: it cherry-picks. Overload the context and it gets confused about what matters, so it guesses, and you get inconsistent results.
 
-What fixes it isn't better rules. It's structure. The right hierarchy, the right load order, and clean handoffs between pieces. That's what this framework is.
+What fixes it isn't better rules. It's structure. The right hierarchy, loaded in the right order, each file doing one job. That's what this framework is.
 
 ## The hierarchy
 
@@ -30,25 +30,17 @@ This is the difference between a foundation and a prompt. A prompt is a thing yo
 
 The order in `CLAUDE.md` is not decoration. Context first (business), then operating rules (hygiene), then output rules (writing). The model builds understanding in that sequence: it knows who it's working for before it learns how to behave, and it knows how to behave before it learns how to write. Reorder it and you weaken it.
 
-## Handoffs
+## Where one model stops and a system begins
 
-A foundation gets you a clean, well-briefed model. It does not, on its own, produce a week of content. Real work happens when focused skills hand off to each other in a chain.
+A foundation gets you a clean, well-briefed model. It does not, on its own, produce a week of content. That takes more than one model. It takes focused skills wired together, each doing one narrow job and passing clean work to the next, so you're not asking a single overloaded instruction to be researcher, writer, editor, and scheduler all at once.
 
-The pattern looks like this:
-
-```
-[ research ]  ->  [ create ]  ->  [ quality check ]  ->  [ schedule / ship ]
-```
-
-Each stage is its own skill with its own narrow job. Research finds the angle and hands its output to creation. Creation drafts the piece and hands it to a quality check. The quality check either passes it on or kicks it back with specific fixes. Nothing moves forward until the stage before it is done properly.
-
-This is why one mega-prompt can't compete. You're not asking one overloaded instruction to be researcher, writer, editor, and scheduler at once. You're building a line where each station does one thing well and passes clean work to the next.
+Wiring those skills together is work you don't have to do. It's what the engine is. This chassis is built so it plugs straight in.
 
 ## Where the engine mounts
 
 This framework is the chassis. It holds your context and your standards, and it makes every individual thing the AI produces cleaner and more like you.
 
-The chassis has empty mounts. They are the stages above:
+The chassis has empty mounts. They are the parts that produce the work:
 
 - **The create stage** is a set of per-format skills: a LinkedIn post skill, a carousel skill, a shorts skill, each one tuned to what works on that platform.
 - **The multiplier** is the part that takes one thought or one video and turns it into 40, 70, a hundred pieces across every channel, so you're omnipresent without the hours.

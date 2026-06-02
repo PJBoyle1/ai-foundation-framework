@@ -34,12 +34,12 @@ If you can edit a Google Doc, you can do this. No code, no terminal required.
 Clone the repo into your working folder:
 
 ```
-git clone https://github.com/PJBoyle1/ai-writing-filters.git
+git clone https://github.com/PJBoyle1/ai-foundation-framework.git
 ```
 
 Or in any Claude chat, paste:
 
-> Read the files in https://github.com/PJBoyle1/ai-writing-filters and set them up as my foundation, following the README and CLAUDE.md.
+> Read the files in https://github.com/PJBoyle1/ai-foundation-framework and set them up as my foundation, following the README and CLAUDE.md.
 
 **2. Run the setup**
 
