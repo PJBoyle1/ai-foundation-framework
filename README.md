@@ -1,64 +1,69 @@
-# AI Writing Filters
+# AI Foundation Framework
 
-A free Claude skill that makes anything Claude writes for you come out sounding like a person wrote it, not a machine.
+A free foundation that makes AI actually useful in your business. It gives your AI the context, the operating rules, and the writing standards it needs so the output stops sounding generic and starts sounding like you, from the first session.
 
 Made by [Growth Models](https://growthmodels.co).
 
-## What it does
+## The problem this fixes
 
-AI writing has a template. People can spot it now even when they can't name what they're spotting. This skill stops Claude producing that template in the first place.
+Most people use AI like a goldfish. Every new session you re-type who you serve, what you sell, how you sound. The AI forgets it all the next time. And whatever it gives back has the same generic template smell everyone else's AI has.
 
-It works on three fronts at once:
+The usual fix is to dump every rule you can think of into one big instruction file. It works for a day, then the output degrades back to em-dash-filled slop. One overloaded file gets skimmed, not followed.
 
-- **Rhythm.** The tidy pairs, the sentence threes, the "it's not X, it's Y" see-saw, the neat bow at the end. The skill breaks the cadence so the writing reads lopsided and human.
-- **Abstraction.** The way AI describes a thing from a distance instead of naming it. The skill pushes for the concrete: the actual mechanism, the named symptom, the round number a person holds in their head.
-- **Vocabulary.** The words and stock phrases that show up far more in machine writing than in anyone's actual speech: "delve", "tapestry", "leverage", "it's worth noting that", the windups nobody says out loud. The skill flags them and reaches for the plain word.
+The fix isn't more rules. It's structure: the right files, loaded in the right order, each doing one job. That's this framework.
 
-It is not a clean-up pass you run on a finished draft. It shapes the writing from the first word. Set it up once and every "write me a post from this" comes out clean.
+## What's in it
 
-## What it doesn't do
+Think of it as the chassis of a car. It holds everything together and gives you something you can actually drive.
 
-It strips the robot. It does not hand your writing a personality. If you've given Claude your own voice or brand notes, it writes in that and stays out of the way. If you haven't, it writes plain and human. Sounding like a *specific person* is a bigger job, and that's what our paid [Content Agent](https://growthmodels.co/social-ai-agent/) is for.
+- **`CLAUDE.md`** is the root. It's thin. It loads the rest in order so the AI gets a clean brief instead of a wall of text.
+- **`foundation/business.md`** holds the basics: who you serve, what you sell, how you sound. Fill it once and stop re-briefing.
+- **`foundation/hygiene.md`** is how the AI works: push back instead of agreeing, state its assumptions, surface tradeoffs.
+- **`foundation/writing.md`** governs how anything it writes comes out, so it reads human and not machine. It works on three fronts: rhythm, abstraction, and vocabulary.
+- **`setup.md`** is a five-minute Q&A that fills in your business file for you.
+- **`ARCHITECTURE.md`** explains how it all fits, and where the engine bolts on when you want more.
 
-## Use it
+## Install (about 15 minutes)
 
-Pick whichever route matches how you use Claude.
+If you can edit a Google Doc, you can do this. No code, no terminal required.
 
-**Quickest: point Claude at the link**
+**1. Get the files into your project**
 
-Paste this into any Claude chat:
-
-> Read https://raw.githubusercontent.com/PJBoyle1/ai-writing-filters/main/SKILL.md and follow it for everything you write from now on.
-
-Claude pulls in the skill and applies it for the rest of that conversation.
-
-**Persistent: Claude Code / Claude Desktop**
-
-Save the skill into your skills folder so it loads every time:
+Clone the repo into your working folder:
 
 ```
-~/.claude/skills/ai-writing-filters/SKILL.md
+git clone https://github.com/PJBoyle1/ai-writing-filters.git
 ```
 
-You can grab the file straight from this repo:
+Or in any Claude chat, paste:
 
-```
-mkdir -p ~/.claude/skills/ai-writing-filters && \
-curl -o ~/.claude/skills/ai-writing-filters/SKILL.md \
-  https://raw.githubusercontent.com/PJBoyle1/ai-writing-filters/main/SKILL.md
-```
+> Read the files in https://github.com/PJBoyle1/ai-writing-filters and set them up as my foundation, following the README and CLAUDE.md.
 
-**Claude Projects (claude.ai)**
+**2. Run the setup**
 
-Open your Project, go to project knowledge, and add the contents of `SKILL.md`. It applies to every chat in that Project.
+Open `setup.md` and follow it. It asks you five short questions, then writes your answers into `foundation/business.md`. Five minutes, done.
+
+**3. Use it**
+
+That's it. With `CLAUDE.md` in your project root, your AI loads the whole foundation every session. Ask it to write a post, draft an email, or think through a decision, and it already knows your business and stays clean.
+
+Built around Claude Code because it's the easiest place to use it, but the architecture applies to any agentic AI (Codex and others).
+
+## The chassis, and the engine
+
+This framework is the chassis: context, operating rules, clean writing. It makes every individual thing your AI produces better and more like you.
+
+It does not include the production engine: the per-format content skills, the part that turns one thought into a week of posts across every channel, the deep voice work, or the quality-control pass. Those bolt onto this foundation. That's our [Content Agent](https://growthmodels.co/social-ai-agent/).
+
+You can drive the chassis as-is and it'll serve you well. When you want volume in your voice on autopilot, that's where the engine goes.
 
 ## Get started
 
-There's a short video walking through a real example at [growthmodels.co](https://growthmodels.co).
+There's a short video walking through the whole setup at [growthmodels.co](https://growthmodels.co).
 
 ## Source and credit
 
-The word and phrase flags draw on the public catalogue at Wikipedia, ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). The rhythm-and-abstraction approach is our own, built from years of editing AI output back into something a person would actually say.
+The writing word and phrase flags draw on the public catalogue at Wikipedia, ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). The rest, the architecture, the rhythm-and-abstraction approach, and the operating rules, is our own, built from running this inside real businesses.
 
 ## Licence
 

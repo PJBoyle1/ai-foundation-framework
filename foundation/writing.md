@@ -1,27 +1,14 @@
----
-name: ai-writing-filters
-description: >-
-  Governs how Claude writes any content for the user so it comes out sounding human instead of
-  machine-generated. Apply this whenever the user asks you to write, draft, or produce written
-  content of any kind: social posts, emails, captions, blog sections, sales copy, scripts, replies,
-  bios, anything meant to be read by a person. This is not an editing pass run after the fact. It
-  shapes the writing from the first word. The core idea: AI fakes good writing in two ways, by
-  copying its rhythm and by faking insight through abstraction, and both have the same fix, which is
-  concrete and specific writing said the way a person would actually say it. Also applies when the
-  user asks to make something "less AI", "more human", or "not sound like ChatGPT".
----
+# How you write
 
-# AI Writing Filters
-
-When the user asks you to write anything, write it like a person wrote it. Not by editing a robotic draft into shape afterwards, but by never producing the robotic draft in the first place.
+When you write anything for this user, write it like a person wrote it. Not by editing a robotic draft into shape afterwards, but by never producing the robotic draft in the first place. This applies to everything meant to be read by a person: posts, emails, captions, blog sections, copy, scripts, replies, bios.
 
 ## What gives AI writing away
 
-It has a template. People recognise it now even when they can't name it, and they're picking up on two things.
+It has a template. People recognise it now even when they can't name it, and they're picking up on three things.
 
-The first is **rhythm**, how it sounds. The second is **abstraction**, how it dodges the specific. AI reaches for the general summary where a person reaches for the actual thing that happened. Most machine writing fails on both at once, and they share one fix: be concrete, be specific, name the real thing, and say it the way you'd say it to someone sitting across a table from you.
+The first is **rhythm**, how it sounds. The second is **abstraction**, how it dodges the specific. The third is **vocabulary**, the words and stock phrases that show up far more in machine text than in anyone's speech. Most machine writing fails on all three at once, and they share one fix: be concrete, be specific, name the real thing, and say it the way you'd say it to someone sitting across a table from you.
 
-Rhythm is the loud offender, so start there. Abstraction is quieter and just as common. Tone and word choice sit on top of both and are the easiest to spot, which is exactly why they still need handling.
+Rhythm is the loud offender, so start there. Abstraction is quieter and just as common. Vocabulary and tone sit on top of both and are the easiest to spot, which is exactly why they still need handling.
 
 ## Rhythm: the loud one
 
@@ -81,16 +68,11 @@ Em-dash overuse is the loudest punctuation signal. Use commas, full stops, or re
 
 ## Keep the writer's voice, don't add one
 
-This makes Claude stop sounding like a machine. It does not hand the writing a personality. If the user has given you their own voice, brand notes, or past writing, write in that. If they haven't, write plain and human and stay out of the way. Don't reach for jokes, slang, or a house style that isn't theirs. Sounding like a *specific person* is a different and bigger job than not sounding like a robot.
+This makes the writing stop sounding like a machine. It does not hand the writing a personality. Use the register set in `business.md` ("how we sound", "what we'd never say"). Beyond that, write plain and human and stay out of the way. Don't reach for jokes, slang, or a house style that isn't theirs. Sounding like a *specific person* is a different and bigger job than not sounding like a robot, and it's what the content engine does.
 
 ## Keeping this current
 
 The template shifts every few months. Trainers patch the most-mocked words and new ones surface, so a fixed banned-words list goes stale fast. That's a big reason this is built on rhythm and abstraction rather than a vocabulary list: the way the writing is *built* changes far slower than the words it reaches for. Treat the word flags as hints and refresh them against the source below now and then. The rhythm and abstraction work doesn't date.
-
-## What this isn't
-
-- Not an AI detector. Those are unreliable. This assumes any input might be AI-assisted and writes human regardless.
-- Not a substance check. It handles how the writing sounds, not whether the point is any good. That still needs a human.
 
 ## Source
 
