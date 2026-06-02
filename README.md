@@ -18,7 +18,7 @@ It is not a clean-up pass you run on a finished draft. It shapes the writing fro
 
 ## What it doesn't do
 
-It strips the robot. It does not hand your writing a personality. If you've given Claude your own voice or brand notes, it writes in that and stays out of the way. If you haven't, it writes plain and human. Sounding like a *specific person* is a bigger job, and that's what our paid [Content Agent](https://growthmodels.co) is for.
+It strips the robot. It does not hand your writing a personality. If you've given Claude your own voice or brand notes, it writes in that and stays out of the way. If you haven't, it writes plain and human. Sounding like a *specific person* is a bigger job, and that's what our paid [Content Agent](https://growthmodels.co/social-ai-agent/) is for.
 
 ## Use it
 
