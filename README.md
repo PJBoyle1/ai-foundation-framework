@@ -8,10 +8,11 @@ Made by [Growth Models](https://growthmodels.co).
 
 AI writing has a template. People can spot it now even when they can't name what they're spotting. This skill stops Claude producing that template in the first place.
 
-It works on two fronts at once:
+It works on three fronts at once:
 
 - **Rhythm.** The tidy pairs, the sentence threes, the "it's not X, it's Y" see-saw, the neat bow at the end. The skill breaks the cadence so the writing reads lopsided and human.
 - **Abstraction.** The way AI describes a thing from a distance instead of naming it. The skill pushes for the concrete: the actual mechanism, the named symptom, the round number a person holds in their head.
+- **Vocabulary.** The words and stock phrases that show up far more in machine writing than in anyone's actual speech: "delve", "tapestry", "leverage", "it's worth noting that", the windups nobody says out loud. The skill flags them and reaches for the plain word.
 
 It is not a clean-up pass you run on a finished draft. It shapes the writing from the first word. Set it up once and every "write me a post from this" comes out clean.
 
